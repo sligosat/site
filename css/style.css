@@ -1,0 +1,370 @@
+/*--
+    Common Css
+--*/
+body {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #3b4045;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 200px;
+    color: white;
+    margin-top: 200px;
+    text-align: center;
+
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.bg-1 {
+  background-image: url('https://raw.githubusercontent.com/sligosat/socials/gh-pages/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: auto;
+}
+
+.bg-orange {
+  background: #f9a743;
+}
+
+.bg-opacity {
+  position: relative;
+}
+
+.bg-opacity:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+a:focus,
+.btn:focus,
+.btn:active:focus {
+  box-shadow: none;
+  outline: 0 none;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.font-size-60 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+@media (max-width: 575px) {
+  .font-size-60 {
+    font-size: 40px;
+  }
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/*--
+    custom heading
+--*/
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  color: #777777;
+  padding-bottom: 70px;
+}
+
+.heading h2 {
+  color: #3c3c3c;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.heading p {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.subheading {
+  color: #3c3c3c;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 45px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-main {
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 15px 40px;
+  display: inline-block;
+  background-color: #f9a743;
+  box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
+}
+
+.btn-main:hover, .btn-main:focus {
+  background-color: #f9a743;
+  color: #fff;
+}
+
+.btn-main-sm {
+  padding: 12px 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*Preloader*/
+#preloader-wrapper {
+  bottom: auto;
+  height: 100%;
+  left: auto;
+  position: fixed;
+  right: auto;
+  top: auto;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-loader {
+  width: 130px;
+  height: 130px;
+  background: #f9a743;
+  border-radius: 50%;
+  animation: loading 6s infinite reverse linear;
+  position: relative;
+  font-family: "themefisher-font" !important;
+}
+
+.pre-loader:before {
+  content: "\f3bd";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  font-size: 40px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+@-webkit-keyframes loading {
+  /*  */
+  0% {
+    box-shadow: inset 0 0 0 80px #f9a743;
+  }
+  8.49% {
+    background: #f9a743;
+    box-shadow: inset 0 0 0 160px #f9a743;
+  }
+  /* orange */
+  8.5% {
+    box-shadow: inset 0 0 0 0 #ff8133;
+  }
+  24.99% {
+    background: #ff8133;
+    box-shadow: inset 0 0 0 160px #ff8133;
+  }
+  /* yellow */
+  25% {
+    box-shadow: inset 0 0 0 0 #ffbe1a;
+  }
+  41.49% {
+    background: #ffbe1a;
+    box-shadow: inset 0 0 0 160px #ffbe1a;
+  }
+  /*  */
+  41.5% {
+    box-shadow: inset 0 0 0 0 #f9a743;
+  }
+  57.99% {
+    background: #f9a743;
+    box-shadow: inset 0 0 0 160px #f9a743;
+  }
+  /* blue */
+  58% {
+    box-shadow: inset 0 0 0 0 #00b5d9;
+  }
+  74.49% {
+    background: #00b5d9;
+    box-shadow: inset 0 0 0 160px #00b5d9;
+  }
+  /* purple */
+  74.5% {
+    box-shadow: inset 0 0 0 0 #9772e5;
+  }
+  90.99% {
+    background: #9772e5;
+    box-shadow: inset 0 0 0 160px #9772e5;
+  }
+  /*  */
+  91% {
+    box-shadow: inset 0 0 0 0 #f9a743;
+  }
+  100% {
+    background: #f9a743;
+    box-shadow: inset 0 0 0 80px #f9a743;
+  }
+}
+
+@keyframes loading {
+  /*  */
+  0% {
+    box-shadow: inset 0 0 0 80px #f9a743;
+  }
+  8.49% {
+    background: #f9a743;
+    box-shadow: inset 0 0 0 160px #f9a743;
+  }
+  /* orange */
+  8.5% {
+    box-shadow: inset 0 0 0 0 #ff8133;
+  }
+  24.99% {
+    background: #ff8133;
+    box-shadow: inset 0 0 0 160px #ff8133;
+  }
+  /* yellow */
+  25% {
+    box-shadow: inset 0 0 0 0 #ffbe1a;
+  }
+  41.49% {
+    background: #ffbe1a;
+    box-shadow: inset 0 0 0 160px #ffbe1a;
+  }
+  /*  */
+  41.5% {
+    box-shadow: inset 0 0 0 0 #f9a743;
+  }
+  57.99% {
+    background: #f9a743;
+    box-shadow: inset 0 0 0 160px #f9a743;
+  }
+  /* blue */
+  58% {
+    box-shadow: inset 0 0 0 0 #00b5d9;
+  }
+  74.49% {
+    background: #00b5d9;
+    box-shadow: inset 0 0 0 160px #00b5d9;
+  }
+  /* purple */
+  74.5% {
+    box-shadow: inset 0 0 0 0 #9772e5;
+  }
+  90.99% {
+    background: #9772e5;
+    box-shadow: inset 0 0 0 160px #9772e5;
+  }
+  /*  */
+  91% {
+    box-shadow: inset 0 0 0 0 #f9a743;
+  }
+  100% {
+    background: #f9a743;
+    box-shadow: inset 0 0 0 80px #f9a743;
+  }
+}
+
+/* navigation */
+.navbar-brand {
+  color: #444;
+  font-size: 55px;
+  margin: 0;
+  line-height: 1;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #444;
+}
+
+body {
+  background-image: url('https://raw.githubusercontent.com/sligosat/socials/gh-pages/images/background.jpg');
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+a:hover {
+    font-size: 15px;
+}
+
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #fff;
+    border:none;
+    margin-top: 10px;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 1.8px;
+    background-color: #000;
+    margin-bottom: 2.2px;
+}
+
+.pfp {
+    width: 150px;
+    position: absolute;
+    margin-top: -10px;
+}
+
+.pfp:hover {
+    width: 160px;
+}
+
