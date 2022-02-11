@@ -2,20 +2,15 @@
     Common Css
 --*/
 body {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 25px;
-  color: #3b4045;
-  font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-    font-size: 200px;
+    font-size: 150px;
     color: white;
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
-
+    margin-bottom: 150px;
 }
 
 ul {
@@ -26,35 +21,6 @@ ul {
 
 a {
   transition: all 0.2s ease-in-out 0s;
-}
-
-.mt-100 {
-  margin-top: 100px;
-}
-
-.bg-1 {
-  background-image: url('https://raw.githubusercontent.com/sligosat/socials/gh-pages/images/background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  aspect-ratio: auto;
-}
-
-.bg-orange {
-  background: #f9a743;
-}
-
-.bg-opacity {
-  position: relative;
-}
-
-.bg-opacity:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 a:focus,
@@ -71,29 +37,6 @@ a:active {
   text-decoration: none;
 }
 
-.section {
-  padding: 100px 0;
-}
-
-.font-size-60 {
-  font-size: 60px;
-  line-height: 1.2;
-}
-
-@media (max-width: 575px) {
-  .font-size-60 {
-    font-size: 40px;
-  }
-}
-
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-.mb-40 {
-  margin-bottom: 40px;
-}
-
 /*--
     custom heading
 --*/
@@ -101,99 +44,6 @@ a:active {
   text-align: center;
 }
 
-.heading {
-  text-align: center;
-  color: #777777;
-  padding-bottom: 70px;
-}
-
-.heading h2 {
-  color: #3c3c3c;
-  padding-bottom: 15px;
-  text-transform: capitalize;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-}
-
-.heading p {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 300;
-}
-
-.subheading {
-  color: #3c3c3c;
-  padding-bottom: 15px;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 45px;
-}
-
-.btn {
-  border-radius: 0;
-}
-
-.btn-main {
-  color: #fff;
-  border-radius: 30px;
-  font-size: 18px;
-  padding: 15px 40px;
-  display: inline-block;
-  background-color: #f9a743;
-  box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
-  background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
-}
-
-.btn-main:hover, .btn-main:focus {
-  background-color: #f9a743;
-  color: #fff;
-}
-
-.btn-main-sm {
-  padding: 12px 35px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-/*Preloader*/
-#preloader-wrapper {
-  bottom: auto;
-  height: 100%;
-  left: auto;
-  position: fixed;
-  right: auto;
-  top: auto;
-  width: 100%;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pre-loader {
-  width: 130px;
-  height: 130px;
-  background: #f9a743;
-  border-radius: 50%;
-  animation: loading 6s infinite reverse linear;
-  position: relative;
-  font-family: "themefisher-font" !important;
-}
-
-.pre-loader:before {
-  content: "\f3bd";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  font-size: 40px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #fff;
-}
 
 @-webkit-keyframes loading {
   /*  */
@@ -331,14 +181,6 @@ a:active {
   color: #444;
 }
 
-body {
-  background-image: url('https://raw.githubusercontent.com/sligosat/socials/gh-pages/images/background.jpg');
-  background-position: 50% 50%;
-  background-repeat: repeat;
-  background-size: cover;
-  height: 800px;
-}
-
 a:hover {
     font-size: 15px;
 }
@@ -368,3 +210,203 @@ a:hover {
     width: 160px;
 }
 
+/* Carousel Image */
+.carousel-img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin-top: 0px;
+}
+
+/* Background Image */
+.bkgd-img {
+  background-position: 50% 50%;
+  width: 100%;
+  height: 80em;
+  position: absolute;
+  z-index: -1;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Footer */
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style: none
+}
+.footer-links li
+{
+  display: block
+}
+.footer-links a
+{
+  color: #737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display: inline-block
+}
+.site-footer .social-icons
+{
+  text-align: right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color: #33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-] 
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px) 
+{
+  .site-footer 
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align: center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style: none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear;
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color: #29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.github:hover
+{
+  background-color: #35619b
+}
+.social-icons a.email:hover
+{
+  background-color: #fff
+}
+.social-icons a.twitter:hover
+{
+  background-color: #1DA1F2
+}
+.social-icons a.socials:hover
+{
+  background-color: #1f1f1f
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+.footer-img {
+    width: fit-content;
+    height: 100px;
+    margin-top: 20px
+}
+
+.footer-favicons {
+    height: 15px;
+    margin-top: -3px;
+}
+
+.center {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
