@@ -6,12 +6,13 @@
     <title>SligoSat</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- Importing fonts -->
     <!-- Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css
+family=Josefin+Sans:300,400,600,700" rel="stylesheet">
 
     <!-- Importing CSSs -->
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -23,61 +24,118 @@
 
 
 <body id="body">
+    <!-- Background Image -->
+    <div class="bkgd-img">
+    <img src="https://cdn.discordapp.com/attachments/931607522241052725/950866030778007632/bg-2.png">
+     </div>
 
-    <!-- Navigation bar -->
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <!--Navigation bar-->
+<div id="nav-placeholder">
 
-              <!-- The company name that is seen on the top of the page -->
-                <a class="navbar-brand text-white" id="SligoSat" href="#"><img src="https://raw.githubusercontent.com/sligosat/media/af699ad388f6c779419f2ae5334659900478ddcc/logo.svg" class="pfp"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="line"></span> 
-                    <span class="line"></span>
-                <span class="line navbar-toggler-icon" style="margin-bottom: 0;"></span>
-                </button>
+</div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto text-center text-lg-left">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/HTMLFiles/OurGoal.html">OUR GOAL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/HTMLFiles/OurProgress.html">OUR PROGRESS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/HTMLFiles/About.html">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="https://sligosat.eu/socials/">CONTACT US</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- Navigation bar finished -->
-
+<script>
+$(function(){
+  $("#nav-placeholder").load("/nav.html");
+});
+</script>
+<!--end of Navigation bar-->
     <!-- Main body -->
-    <h1>Home</h1>
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          
+        </ol>
+
+        <div class="carousel-inner">
+
+            <!-- Carousel Images -->
+          
+           <div class="carousel-item active">
+                <img class="d-block w-100 carousel-img" src="https://pbs.twimg.com/media/FJn5SN6WYAMIjD2?format=jpg" alt="First slide">
+            </div>
+
+           
+
+            <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="https://pbs.twimg.com/media/FJfObwPXsAMvIau?format=jpg" alt="Third slide">
+            </div>
+
+          <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="https://media.discordapp.net/attachments/931607522241052725/949043329188896779/index.jpg" alt="Fourth slide">
+            </div>
+
+<div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="https://media.discordapp.net/attachments/931607522241052725/949266863546855484/IMG_20220304_112202.jpg" alt="Fifth slide">
+            </div>
+
+        
+
+          
+          
+          
+
+        <!-- Carousel buttons -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+            
+    </div>
+    <!-- Carousel finished -->
+
     
 
+    
+   <div class = "text">  <p>
+     CanSat is an engineering competition sponsored and set up by AMD. You have to build a satellite inside of a 330ml Coke can to gather information in low atmosphere. We have to complete a primary and secondary mission for the competition. The primary mission is to measure air temperature, altitude and establish a radio connection to transmit that data and other data to a ground computer.
+   </p><br><p>
+We have used the Arduino microcontroller and a daughter board with the BME280 sensor to measure the air temperature and altitude to complete the primary mission. We used C++ to control the arduino to follow certain instructions.
+    </p><br><p>
+We created a certain ground station through python to take all the data we measure and import it to excel as well as plotting graphs automatically for ease of use. 
+ </p><br><p>
+We created a website through replit using html to create a ground up website to show an extra layer of depth. It shows all our progress and goals to date.
+ </p><br><p>
+We created a twitter and Instagram account to increase our social presence and show our progress to the public
+ </p><br><p>
+We have had 2 workshops in Athlone to gain help and advice for our project. The first of which was to finish the primary mission of the project and the second of which was to set our radio frequencies and see our progress.
+ </p><br><p>
+The can design was created by trying to keep everything simple and functional so it had 66mm diameter and 115mm height with a hinge.
+ </p><br><p>
+We went to the regional finals on the 4th of March with no can and no working radios. But when we got to TUS Athlone we swapped our radios to radios on the same frequency. Then got our radio frequency just brought up on the drone and measured the data. Then for one last push we created a masterful presentation that was carried out elegantly. We were able to move on to nationals. One of the major reasons our presentation was better than others is that the data we plotted on graphs made sense as our graphs had a u shape that shows variation and other teams had data that went in a straight line that shows that their sensors didn’t work.
+ </p>
+
+
+  </p>
+
+</div>
+      
+    
+    <div id="footer-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#footer-placeholder").load("/footer.html");
+});
+</script>
     <!-- Importing Scripts -->
-    <script src="plugins/jquery-2.1.1.min.js"></script>
-    <script src="/plugins/bootstrap/bootstrap.min.js:1:22853"></script>
-    <script src="/plugins/bootstrap/bootstrap.min.js:1:2303 "></script>
-    <script src="/plugins/bootstrap/bootstrap.min.js:1:20360"></script>
-    <script src="/plugins/bootstrap/bootstrap.min.js:1:20396"></script>
+    <script src="/plugins/jquery-3.6.0.min.js"></script>
     <script src="/plugins/bootstrap/bootstrap.min.js"></script>
 
-    <script src="/plugins/owl-carousel/owl.carousel.min.js:47:415"></script>
-    <script src="plugins/magnific-popup/jquery.magnific.popup.min.js"></script>
-    <script src="/js/main.js:20:4"></script>
+    <script src="/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/plugins/magnific-popup/jquery.magnific.popup.min.js"></script>
+    <script src="/js/main.js"></script>
     
-</body>
-
+</body> 
 </html>
